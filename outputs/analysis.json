@@ -1,0 +1,2158 @@
+{
+  "period_days": 30,
+  "audit": {
+    "summary": [
+      {
+        "gpu_id": "gpu-h100-0",
+        "gpu_type": "H100",
+        "gpu_util_pct": 94.4,
+        "mfu": 0.417,
+        "mbu": 0.446,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-h100-1",
+        "gpu_type": "H100",
+        "gpu_util_pct": 95.2,
+        "mfu": 0.408,
+        "mbu": 0.44,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-h100-2",
+        "gpu_type": "H100",
+        "gpu_util_pct": 94.3,
+        "mfu": 0.401,
+        "mbu": 0.423,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-h100-3",
+        "gpu_type": "H100",
+        "gpu_util_pct": 93.1,
+        "mfu": 0.427,
+        "mbu": 0.444,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-h100-4",
+        "gpu_type": "H100",
+        "gpu_util_pct": 98.2,
+        "mfu": 0.194,
+        "mbu": 0.207,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-h100-5",
+        "gpu_type": "H100",
+        "gpu_util_pct": 61.1,
+        "mfu": 0.261,
+        "mbu": 0.271,
+        "idle_hours": 8
+      },
+      {
+        "gpu_id": "gpu-a100-0",
+        "gpu_type": "A100",
+        "gpu_util_pct": 31.4,
+        "mfu": 0.259,
+        "mbu": 0.276,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-a100-1",
+        "gpu_type": "A100",
+        "gpu_util_pct": 28.0,
+        "mfu": 0.236,
+        "mbu": 0.247,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-a10g-0",
+        "gpu_type": "A10G",
+        "gpu_util_pct": 25.0,
+        "mfu": 0.219,
+        "mbu": 0.235,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-a10g-1",
+        "gpu_type": "A10G",
+        "gpu_util_pct": 96.9,
+        "mfu": 0.268,
+        "mbu": 0.302,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-l4-0",
+        "gpu_type": "L4",
+        "gpu_util_pct": 40.0,
+        "mfu": 0.302,
+        "mbu": 0.328,
+        "idle_hours": 0
+      }
+    ],
+    "lies": [
+      {
+        "gpu_id": "gpu-h100-4",
+        "gpu_type": "H100",
+        "gpu_util_pct": 98.2,
+        "mfu": 0.194,
+        "mbu": 0.207,
+        "idle_hours": 0
+      },
+      {
+        "gpu_id": "gpu-a10g-1",
+        "gpu_type": "A10G",
+        "gpu_util_pct": 96.9,
+        "mfu": 0.268,
+        "mbu": 0.302,
+        "idle_hours": 0
+      }
+    ],
+    "idle_waste_daily": 20.0,
+    "rightsizing": {
+      "catalog": [
+        {
+          "gpu_type": "H100",
+          "hbm_gb": 80.0,
+          "peak_bw_tbs": 3.35,
+          "on_demand_hr": 2.5,
+          "usd_per_gb_hr": 0.03125
+        },
+        {
+          "gpu_type": "H200",
+          "hbm_gb": 141.0,
+          "peak_bw_tbs": 4.8,
+          "on_demand_hr": 3.95,
+          "usd_per_gb_hr": 0.028014184397163123
+        },
+        {
+          "gpu_type": "A100",
+          "hbm_gb": 80.0,
+          "peak_bw_tbs": 2.0,
+          "on_demand_hr": 1.79,
+          "usd_per_gb_hr": 0.022375
+        },
+        {
+          "gpu_type": "A10G",
+          "hbm_gb": 24.0,
+          "peak_bw_tbs": 0.6,
+          "on_demand_hr": 1.0,
+          "usd_per_gb_hr": 0.041666666666666664
+        },
+        {
+          "gpu_type": "L4",
+          "hbm_gb": 24.0,
+          "peak_bw_tbs": 0.3,
+          "on_demand_hr": 0.8,
+          "usd_per_gb_hr": 0.03333333333333333
+        },
+        {
+          "gpu_type": "B200",
+          "hbm_gb": 192.0,
+          "peak_bw_tbs": 8.0,
+          "on_demand_hr": 5.09,
+          "usd_per_gb_hr": 0.026510416666666665
+        },
+        {
+          "gpu_type": "MI300X",
+          "hbm_gb": 192.0,
+          "peak_bw_tbs": 5.3,
+          "on_demand_hr": 1.95,
+          "usd_per_gb_hr": 0.01015625
+        }
+      ],
+      "recommendations": [
+        {
+          "gpu_id": "gpu-a100-0",
+          "current_gpu": "A100",
+          "proposed_gpu": "A100",
+          "changed": false,
+          "mbu": 0.276,
+          "required_memory_gb": 74.47000000000001,
+          "required_peak_bw_tbs": 1.01,
+          "current_peak_bw_tbs": 2.0,
+          "target_peak_bw_tbs": 2.0,
+          "current_usd_per_gb_hr": 0.022375,
+          "target_usd_per_gb_hr": 0.022375,
+          "baseline_monthly": 1288.8,
+          "optimized_monthly": 1288.8,
+          "savings_monthly": 0.0,
+          "savings_pct": 0.0,
+          "reason": "No cheaper GPU meets both memory and bandwidth constraints"
+        },
+        {
+          "gpu_id": "gpu-a100-1",
+          "current_gpu": "A100",
+          "proposed_gpu": "A100",
+          "changed": false,
+          "mbu": 0.247,
+          "required_memory_gb": 73.7,
+          "required_peak_bw_tbs": 0.9671428571428573,
+          "current_peak_bw_tbs": 2.0,
+          "target_peak_bw_tbs": 2.0,
+          "current_usd_per_gb_hr": 0.022375,
+          "target_usd_per_gb_hr": 0.022375,
+          "baseline_monthly": 1288.8,
+          "optimized_monthly": 1288.8,
+          "savings_monthly": 0.0,
+          "savings_pct": 0.0,
+          "reason": "No cheaper GPU meets both memory and bandwidth constraints"
+        },
+        {
+          "gpu_id": "gpu-a10g-0",
+          "current_gpu": "A10G",
+          "proposed_gpu": "L4",
+          "changed": true,
+          "mbu": 0.235,
+          "required_memory_gb": 22.330000000000002,
+          "required_peak_bw_tbs": 0.26,
+          "current_peak_bw_tbs": 0.6,
+          "target_peak_bw_tbs": 0.3,
+          "current_usd_per_gb_hr": 0.041666666666666664,
+          "target_usd_per_gb_hr": 0.03333333333333333,
+          "baseline_monthly": 720.0,
+          "optimized_monthly": 576.0,
+          "savings_monthly": 144.0,
+          "savings_pct": 19.999999999999996,
+          "reason": "Cheaper GPU fits peak memory + headroom and target MBU bandwidth"
+        },
+        {
+          "gpu_id": "gpu-a10g-1",
+          "current_gpu": "A10G",
+          "proposed_gpu": "A10G",
+          "changed": false,
+          "mbu": 0.302,
+          "required_memory_gb": 22.44,
+          "required_peak_bw_tbs": 0.3028571428571429,
+          "current_peak_bw_tbs": 0.6,
+          "target_peak_bw_tbs": 0.6,
+          "current_usd_per_gb_hr": 0.041666666666666664,
+          "target_usd_per_gb_hr": 0.041666666666666664,
+          "baseline_monthly": 720.0,
+          "optimized_monthly": 720.0,
+          "savings_monthly": 0.0,
+          "savings_pct": 0.0,
+          "reason": "No cheaper GPU meets both memory and bandwidth constraints"
+        },
+        {
+          "gpu_id": "gpu-l4-0",
+          "current_gpu": "L4",
+          "proposed_gpu": "L4",
+          "changed": false,
+          "mbu": 0.328,
+          "required_memory_gb": 22.220000000000002,
+          "required_peak_bw_tbs": 0.16857142857142857,
+          "current_peak_bw_tbs": 0.3,
+          "target_peak_bw_tbs": 0.3,
+          "current_usd_per_gb_hr": 0.03333333333333333,
+          "target_usd_per_gb_hr": 0.03333333333333333,
+          "baseline_monthly": 576.0,
+          "optimized_monthly": 576.0,
+          "savings_monthly": 0.0,
+          "savings_pct": 0.0,
+          "reason": "No cheaper GPU meets both memory and bandwidth constraints"
+        }
+      ],
+      "mbu_target": 0.7,
+      "memory_headroom": 0.1,
+      "days": 30,
+      "baseline_monthly": 4593.6,
+      "optimized_monthly": 4449.6,
+      "savings_monthly": 144.0,
+      "savings_pct": 3.1347962382445194
+    }
+  },
+  "inference": {
+    "baseline_daily": 48.87,
+    "optimized_daily": 9.33,
+    "baseline_per_m": 6.488,
+    "optimized_per_m": 1.238,
+    "savings_pct": 80.9,
+    "total_tokens": 7533027,
+    "request_count": 2400,
+    "stages": [
+      {
+        "name": "Baseline",
+        "daily_usd": 48.87416100000006,
+        "per_m": 6.487984312282441
+      },
+      {
+        "name": "Cascade",
+        "daily_usd": 11.475642800000013,
+        "per_m": 1.5233773621148596
+      },
+      {
+        "name": "Cascade + cache",
+        "daily_usd": 11.14308991124995,
+        "per_m": 1.479231378202939
+      },
+      {
+        "name": "Cascade + cache + batch",
+        "daily_usd": 9.329011061249963,
+        "per_m": 1.2384146587089047
+      }
+    ],
+    "reasoning_budget": {
+      "groups": {
+        "reasoning": {
+          "requests": 201,
+          "tokens": 1241156,
+          "cost_usd": 1.407652179523809,
+          "energy_wh": 29787.744000000002,
+          "traffic_pct": 8.375,
+          "cost_pct": 15.088975350997165,
+          "energy_pct": 94.04090573990459
+        },
+        "standard": {
+          "requests": 2199,
+          "tokens": 6291871,
+          "cost_usd": 7.921358881726175,
+          "energy_wh": 1887.5613000000005,
+          "traffic_pct": 91.625,
+          "cost_pct": 84.91102464900284,
+          "energy_pct": 5.95909426009542
+        }
+      },
+      "total_requests": 2400,
+      "total_cost_usd": 9.329011061249984,
+      "total_energy_wh": 31675.305300000004,
+      "same_token_small_cost_usd": 0.20172771285714278,
+      "same_token_standard_energy_wh": 372.34680000000037,
+      "reasoning_extra_usd": 1.2059244666666662,
+      "reasoning_extra_wh": 29415.397200000003,
+      "scenarios": [
+        {
+          "cap_fraction": 0.1,
+          "retained_requests": 201,
+          "rerouted_requests": 0,
+          "rerouted_data_rows": [],
+          "traffic_pct": 8.375,
+          "cost_usd": 9.329011061249984,
+          "energy_wh": 31675.305300000004,
+          "savings_usd": 0.0,
+          "savings_wh": 0.0,
+          "cost_savings_pct": 0.0,
+          "energy_savings_pct": 0.0
+        },
+        {
+          "cap_fraction": 0.05,
+          "retained_requests": 120,
+          "rerouted_requests": 81,
+          "rerouted_data_rows": [
+            96,
+            98,
+            149,
+            151,
+            252,
+            259,
+            276,
+            297,
+            353,
+            366,
+            369,
+            424,
+            466,
+            520,
+            559,
+            618,
+            638,
+            678,
+            686,
+            695,
+            734,
+            743,
+            848,
+            906,
+            923,
+            930,
+            956,
+            962,
+            988,
+            1042,
+            1075,
+            1128,
+            1134,
+            1196,
+            1227,
+            1247,
+            1342,
+            1360,
+            1400,
+            1429,
+            1458,
+            1488,
+            1534,
+            1538,
+            1543,
+            1549,
+            1592,
+            1596,
+            1607,
+            1646,
+            1679,
+            1712,
+            1738,
+            1766,
+            1768,
+            1799,
+            1829,
+            1839,
+            1847,
+            1855,
+            1877,
+            1975,
+            1982,
+            1997,
+            2007,
+            2058,
+            2071,
+            2085,
+            2091,
+            2182,
+            2198,
+            2219,
+            2261,
+            2263,
+            2265,
+            2271,
+            2298,
+            2330,
+            2366,
+            2390,
+            2393
+          ],
+          "traffic_pct": 5.0,
+          "cost_usd": 9.08890824791665,
+          "energy_wh": 24063.291900000004,
+          "savings_usd": 0.24010281333333333,
+          "savings_wh": 7612.0134,
+          "cost_savings_pct": 2.573722035025245,
+          "energy_savings_pct": 24.03138131710446
+        }
+      ]
+    },
+    "cache_economics": {
+      "groups": {
+        "small": {
+          "requests": 1902,
+          "used": 1621,
+          "skipped": 281,
+          "write_usd": 0.09560114374999984,
+          "avg_cache_reads": 3.295478443743428,
+          "write_per_m": 0.25,
+          "break_even_reads": 1.3888888888888886,
+          "batch_break_even_reads": 2.7777777777777772
+        },
+        "large": {
+          "requests": 498,
+          "used": 219,
+          "skipped": 279,
+          "write_usd": 0.28537118750000007,
+          "avg_cache_reads": 1.6947791164658634,
+          "write_per_m": 3.75,
+          "break_even_reads": 1.3888888888888888,
+          "batch_break_even_reads": 2.7777777777777777
+        }
+      },
+      "write_multiplier": 1.25,
+      "write_daily_usd": 0.38097233124999996,
+      "legacy_free_write_daily_usd": 8.484622969999995,
+      "no_cache_batched_daily_usd": 9.658588099999994,
+      "net_cache_savings_daily_usd": 0.3295770387500312,
+      "used_requests": 1840,
+      "skipped_requests": 560,
+      "prefix_count": 1101,
+      "metadata_source": "synthetic team/tier/12-request-window prefix groups, seed=25"
+    }
+  },
+  "purchasing": {
+    "recommendations": [
+      {
+        "job_id": "job-train-llm",
+        "gpu_type": "H100",
+        "tier": "spot",
+        "purchase_option": "spot",
+        "actual_days": 14.0,
+        "planning_horizon_days": 14.0,
+        "interrupt_rate": 0.02,
+        "horizon_plan_cost_usd": 3494.4,
+        "on_demand": 5600,
+        "optimized": 3494,
+        "on_demand_exact": 5600.0,
+        "optimized_exact": 3494.4,
+        "legacy_option": "spot",
+        "legacy_monthly_usd": 3544.7999999999997,
+        "horizon_options_per_gpu_usd": {
+          "on_demand": 700.0,
+          "spot": 436.8,
+          "reserved_1yr": 17520.0,
+          "reserved_3yr": 36792.0
+        }
+      },
+      {
+        "job_id": "job-train-embed",
+        "gpu_type": "A100",
+        "tier": "spot",
+        "purchase_option": "spot",
+        "actual_days": 5.0,
+        "planning_horizon_days": 5.0,
+        "interrupt_rate": 0.06,
+        "horizon_plan_cost_usd": 233.20000000000005,
+        "on_demand": 358,
+        "optimized": 233,
+        "on_demand_exact": 358.0,
+        "optimized_exact": 233.20000000000005,
+        "legacy_option": "spot",
+        "legacy_monthly_usd": 232.10000000000002,
+        "horizon_options_per_gpu_usd": {
+          "on_demand": 89.5,
+          "spot": 58.30000000000001,
+          "reserved_1yr": 12264.0,
+          "reserved_3yr": 26280.0
+        }
+      },
+      {
+        "job_id": "job-finetune",
+        "gpu_type": "H100",
+        "tier": "spot",
+        "purchase_option": "spot",
+        "actual_days": 3.0,
+        "planning_horizon_days": 3.0,
+        "interrupt_rate": 0.02,
+        "horizon_plan_cost_usd": 56.160000000000004,
+        "on_demand": 90,
+        "optimized": 56,
+        "on_demand_exact": 90.0,
+        "optimized_exact": 56.160000000000004,
+        "legacy_option": "spot",
+        "legacy_monthly_usd": 56.97,
+        "horizon_options_per_gpu_usd": {
+          "on_demand": 45.0,
+          "spot": 28.080000000000002,
+          "reserved_1yr": 17520.0,
+          "reserved_3yr": 36792.0
+        }
+      },
+      {
+        "job_id": "job-infer-chat",
+        "gpu_type": "A10G",
+        "tier": "reserved",
+        "purchase_option": "reserved_3yr",
+        "actual_days": 30.0,
+        "planning_horizon_days": 1095,
+        "interrupt_rate": 0.12,
+        "horizon_plan_cost_usd": 94608.0,
+        "on_demand": 4320,
+        "optimized": 2592,
+        "on_demand_exact": 4320.0,
+        "optimized_exact": 2592.0,
+        "legacy_option": "reserved_3yr",
+        "legacy_monthly_usd": 2592.0,
+        "horizon_options_per_gpu_usd": {
+          "on_demand": 26280.0,
+          "reserved_1yr": 21024.0,
+          "reserved_3yr": 15768.0
+        }
+      },
+      {
+        "job_id": "job-infer-rag",
+        "gpu_type": "A100",
+        "tier": "reserved",
+        "purchase_option": "reserved_3yr",
+        "actual_days": 30.0,
+        "planning_horizon_days": 1095,
+        "interrupt_rate": 0.06,
+        "horizon_plan_cost_usd": 78840.0,
+        "on_demand": 3866,
+        "optimized": 2160,
+        "on_demand_exact": 3866.4,
+        "optimized_exact": 2160.0,
+        "legacy_option": "reserved_3yr",
+        "legacy_monthly_usd": 2160.0,
+        "horizon_options_per_gpu_usd": {
+          "on_demand": 47041.200000000004,
+          "reserved_1yr": 36792.0,
+          "reserved_3yr": 26280.0
+        }
+      },
+      {
+        "job_id": "job-infer-search",
+        "gpu_type": "L4",
+        "tier": "reserved",
+        "purchase_option": "reserved_3yr",
+        "actual_days": 30.0,
+        "planning_horizon_days": 1095,
+        "interrupt_rate": 0.08,
+        "horizon_plan_cost_usd": 47304.0,
+        "on_demand": 1728,
+        "optimized": 1296,
+        "on_demand_exact": 1728.0,
+        "optimized_exact": 1296.0,
+        "legacy_option": "reserved_3yr",
+        "legacy_monthly_usd": 1296.0,
+        "horizon_options_per_gpu_usd": {
+          "on_demand": 15768.0,
+          "reserved_1yr": 15768.0,
+          "reserved_3yr": 11826.0
+        }
+      },
+      {
+        "job_id": "job-dev-sandbox",
+        "gpu_type": "A10G",
+        "tier": "spot",
+        "purchase_option": "spot",
+        "actual_days": 22.0,
+        "planning_horizon_days": 22.0,
+        "interrupt_rate": 0.12,
+        "horizon_plan_cost_usd": 153.47200000000004,
+        "on_demand": 352,
+        "optimized": 153,
+        "on_demand_exact": 352.0,
+        "optimized_exact": 153.47200000000004,
+        "legacy_option": "spot",
+        "legacy_monthly_usd": 148.544,
+        "horizon_options_per_gpu_usd": {
+          "on_demand": 176.0,
+          "spot": 76.73600000000002,
+          "reserved_1yr": 7008.0,
+          "reserved_3yr": 15768.0
+        }
+      },
+      {
+        "job_id": "job-batch-eval",
+        "gpu_type": "H100",
+        "tier": "spot",
+        "purchase_option": "spot",
+        "actual_days": 30.0,
+        "planning_horizon_days": 30.0,
+        "interrupt_rate": 0.02,
+        "horizon_plan_cost_usd": 140.4,
+        "on_demand": 225,
+        "optimized": 140,
+        "on_demand_exact": 225.0,
+        "optimized_exact": 140.4,
+        "legacy_option": "spot",
+        "legacy_monthly_usd": 142.42499999999998,
+        "horizon_options_per_gpu_usd": {
+          "on_demand": 225.0,
+          "spot": 140.4,
+          "reserved_1yr": 17520.0,
+          "reserved_3yr": 36792.0
+        }
+      }
+    ],
+    "on_demand_monthly": 16539,
+    "optimized_monthly": 10126,
+    "savings_pct": 38.8,
+    "on_demand_monthly_exact": 16539.4,
+    "optimized_monthly_exact": 10125.632,
+    "carbon_schedule": {
+      "baseline_region": "us-east-1",
+      "window_days": 30,
+      "jobs": [
+        {
+          "job_id": "job-train-llm",
+          "kind": "train",
+          "gpu_type": "H100",
+          "days": 14.0,
+          "gpu_hours": 2240.0,
+          "energy_kwh": 1568.0,
+          "baseline_carbon_g": 595840.0,
+          "target_carbon_g": 47040.0,
+          "carbon_saved_g": 548800.0
+        },
+        {
+          "job_id": "job-train-embed",
+          "kind": "train",
+          "gpu_type": "A100",
+          "days": 5.0,
+          "gpu_hours": 200.0,
+          "energy_kwh": 80.0,
+          "baseline_carbon_g": 30400.0,
+          "target_carbon_g": 2400.0,
+          "carbon_saved_g": 28000.0
+        },
+        {
+          "job_id": "job-finetune",
+          "kind": "train",
+          "gpu_type": "H100",
+          "days": 3.0,
+          "gpu_hours": 36.0,
+          "energy_kwh": 25.2,
+          "baseline_carbon_g": 9576.0,
+          "target_carbon_g": 756.0,
+          "carbon_saved_g": 8820.0
+        },
+        {
+          "job_id": "job-dev-sandbox",
+          "kind": "dev",
+          "gpu_type": "A10G",
+          "days": 22.0,
+          "gpu_hours": 352.0,
+          "energy_kwh": 52.8,
+          "baseline_carbon_g": 20064.0,
+          "target_carbon_g": 1584.0,
+          "carbon_saved_g": 18480.0
+        },
+        {
+          "job_id": "job-batch-eval",
+          "kind": "infer",
+          "gpu_type": "H100",
+          "days": 30.0,
+          "gpu_hours": 90.0,
+          "energy_kwh": 63.0,
+          "baseline_carbon_g": 23940.0,
+          "target_carbon_g": 1890.0,
+          "carbon_saved_g": 22050.0
+        }
+      ],
+      "energy_kwh": 1789.0,
+      "regions": [
+        {
+          "region": "us-east-1",
+          "price_kwh": 0.12,
+          "carbon_g_per_kwh": 380,
+          "electricity_usd": 214.67999999999998,
+          "carbon_g": 679820.0,
+          "electricity_saved_usd": 0.0,
+          "carbon_saved_g": 0.0,
+          "balanced_score": 1.0
+        },
+        {
+          "region": "us-west-2",
+          "price_kwh": 0.07,
+          "carbon_g_per_kwh": 120,
+          "electricity_usd": 125.23000000000002,
+          "carbon_g": 214680.0,
+          "electricity_saved_usd": 89.44999999999996,
+          "carbon_saved_g": 465140.0,
+          "balanced_score": 0.44956140350877194
+        },
+        {
+          "region": "europe-north1",
+          "price_kwh": 0.09,
+          "carbon_g_per_kwh": 30,
+          "electricity_usd": 161.01,
+          "carbon_g": 53670.0,
+          "electricity_saved_usd": 53.66999999999999,
+          "carbon_saved_g": 626150.0,
+          "balanced_score": 0.4144736842105263
+        },
+        {
+          "region": "europe-central2",
+          "price_kwh": 0.18,
+          "carbon_g_per_kwh": 660,
+          "electricity_usd": 322.02,
+          "carbon_g": 1180740.0,
+          "electricity_saved_usd": -107.34,
+          "carbon_saved_g": -500920.0,
+          "balanced_score": 1.618421052631579
+        },
+        {
+          "region": "us-east-wa",
+          "price_kwh": 0.055,
+          "carbon_g_per_kwh": 90,
+          "electricity_usd": 98.395,
+          "carbon_g": 161010.0,
+          "electricity_saved_usd": 116.28499999999998,
+          "carbon_saved_g": 518810.0,
+          "balanced_score": 0.3475877192982456
+        }
+      ],
+      "cheapest_region": "us-east-wa",
+      "cleanest_region": "europe-north1",
+      "balanced_region": "us-east-wa",
+      "carbon_weight": 0.5,
+      "baseline_carbon_g": 679820.0,
+      "target_carbon_g": 53670.0,
+      "carbon_saved_g": 626150.0,
+      "carbon_savings_pct": 92.10526315789474,
+      "electricity_saved_usd": 53.66999999999999
+    },
+    "policy_comparison": {
+      "baseline_window_usd": 16539.4,
+      "legacy_window_usd": 10172.838999999998,
+      "improved_window_usd": 10125.632,
+      "legacy_savings_pct": 38.493300845254375,
+      "improved_savings_pct": 38.7787223236635,
+      "additional_savings_usd": 47.206999999998516,
+      "legacy_prorated_window_usd": 9848.838999999998,
+      "reserved_idle_cost_correction_usd": 324.0
+    },
+    "policy_matrix": [
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 300.0,
+        "on_demand_usd": 300.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 3650.0,
+        "on_demand_usd": 3650.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "on_demand",
+        "cost_usd": 10950.0,
+        "on_demand_usd": 10950.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 187.2,
+        "on_demand_usd": 300.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 2277.6,
+        "on_demand_usd": 3650.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 6832.8,
+        "on_demand_usd": 10950.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 1200.0,
+        "on_demand_usd": 1200.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 14600.0,
+        "on_demand_usd": 14600.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 36792.0,
+        "on_demand_usd": 43800.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 748.8,
+        "on_demand_usd": 1200.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 9110.4,
+        "on_demand_usd": 14600.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 27331.2,
+        "on_demand_usd": 43800.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 1800.0,
+        "on_demand_usd": 1800.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "reserved_1yr",
+        "cost_usd": 17520.0,
+        "on_demand_usd": 21900.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 36792.0,
+        "on_demand_usd": 65700.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 1123.2,
+        "on_demand_usd": 1800.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 13665.6,
+        "on_demand_usd": 21900.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H100",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 36792.0,
+        "on_demand_usd": 65700.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 474.0,
+        "on_demand_usd": 474.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 5767.0,
+        "on_demand_usd": 5767.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "on_demand",
+        "cost_usd": 17301.0,
+        "on_demand_usd": 17301.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 324.48,
+        "on_demand_usd": 474.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 3947.84,
+        "on_demand_usd": 5767.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 11843.52,
+        "on_demand_usd": 17301.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 1896.0,
+        "on_demand_usd": 1896.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 23068.0,
+        "on_demand_usd": 23068.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 63072.0,
+        "on_demand_usd": 69204.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 1297.92,
+        "on_demand_usd": 1896.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 15791.36,
+        "on_demand_usd": 23068.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 47374.08,
+        "on_demand_usd": 69204.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 2844.0,
+        "on_demand_usd": 2844.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "reserved_1yr",
+        "cost_usd": 28032.0,
+        "on_demand_usd": 34602.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 63072.0,
+        "on_demand_usd": 103806.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 1946.88,
+        "on_demand_usd": 2844.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 23687.04,
+        "on_demand_usd": 34602.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "H200",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 63072.0,
+        "on_demand_usd": 103806.0,
+        "interrupt_rate": 0.02
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 214.8,
+        "on_demand_usd": 214.8,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 2613.4,
+        "on_demand_usd": 2613.4,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "on_demand",
+        "cost_usd": 7840.2,
+        "on_demand_usd": 7840.2,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 139.92,
+        "on_demand_usd": 214.8,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 1702.36,
+        "on_demand_usd": 2613.4,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 5107.08,
+        "on_demand_usd": 7840.2,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 859.2,
+        "on_demand_usd": 859.2,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 10453.6,
+        "on_demand_usd": 10453.6,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 26280.0,
+        "on_demand_usd": 31360.8,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 559.68,
+        "on_demand_usd": 859.2,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 6809.44,
+        "on_demand_usd": 10453.6,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 20428.32,
+        "on_demand_usd": 31360.8,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 1288.8,
+        "on_demand_usd": 1288.8,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "reserved_1yr",
+        "cost_usd": 12264.0,
+        "on_demand_usd": 15680.4,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 26280.0,
+        "on_demand_usd": 47041.2,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 839.52,
+        "on_demand_usd": 1288.8,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 10214.16,
+        "on_demand_usd": 15680.4,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A100",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 26280.0,
+        "on_demand_usd": 47041.2,
+        "interrupt_rate": 0.06
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 120.0,
+        "on_demand_usd": 120.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 1460.0,
+        "on_demand_usd": 1460.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "on_demand",
+        "cost_usd": 4380.0,
+        "on_demand_usd": 4380.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 52.32,
+        "on_demand_usd": 120.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 636.56,
+        "on_demand_usd": 1460.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 1909.68,
+        "on_demand_usd": 4380.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 480.0,
+        "on_demand_usd": 480.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 5840.0,
+        "on_demand_usd": 5840.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 15768.0,
+        "on_demand_usd": 17520.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 209.28,
+        "on_demand_usd": 480.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 2546.24,
+        "on_demand_usd": 5840.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 7638.72,
+        "on_demand_usd": 17520.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 720.0,
+        "on_demand_usd": 720.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "reserved_1yr",
+        "cost_usd": 7008.0,
+        "on_demand_usd": 8760.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 15768.0,
+        "on_demand_usd": 26280.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 313.92,
+        "on_demand_usd": 720.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 3819.36,
+        "on_demand_usd": 8760.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "A10G",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 11458.08,
+        "on_demand_usd": 26280.0,
+        "interrupt_rate": 0.12
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 96.0,
+        "on_demand_usd": 96.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 1168.0,
+        "on_demand_usd": 1168.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "on_demand",
+        "cost_usd": 3504.0,
+        "on_demand_usd": 3504.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 44.94,
+        "on_demand_usd": 96.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 546.77,
+        "on_demand_usd": 1168.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 1640.31,
+        "on_demand_usd": 3504.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 384.0,
+        "on_demand_usd": 384.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 4672.0,
+        "on_demand_usd": 4672.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 11826.0,
+        "on_demand_usd": 14016.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 179.76,
+        "on_demand_usd": 384.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 2187.08,
+        "on_demand_usd": 4672.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 6561.24,
+        "on_demand_usd": 14016.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 576.0,
+        "on_demand_usd": 576.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "reserved_1yr",
+        "cost_usd": 5256.0,
+        "on_demand_usd": 7008.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 11826.0,
+        "on_demand_usd": 21024.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 269.64,
+        "on_demand_usd": 576.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 3280.62,
+        "on_demand_usd": 7008.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "L4",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 9841.86,
+        "on_demand_usd": 21024.0,
+        "interrupt_rate": 0.08
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 610.8,
+        "on_demand_usd": 610.8,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 7431.4,
+        "on_demand_usd": 7431.4,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "on_demand",
+        "cost_usd": 22294.2,
+        "on_demand_usd": 22294.2,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 336.07,
+        "on_demand_usd": 610.8,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 4088.88,
+        "on_demand_usd": 7431.4,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 12266.63,
+        "on_demand_usd": 22294.2,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 2443.2,
+        "on_demand_usd": 2443.2,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 29725.6,
+        "on_demand_usd": 29725.6,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 84096.0,
+        "on_demand_usd": 89176.8,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 1344.29,
+        "on_demand_usd": 2443.2,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 16355.5,
+        "on_demand_usd": 29725.6,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 49066.51,
+        "on_demand_usd": 89176.8,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 3664.8,
+        "on_demand_usd": 3664.8,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "reserved_1yr",
+        "cost_usd": 36792.0,
+        "on_demand_usd": 44588.4,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 84096.0,
+        "on_demand_usd": 133765.2,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 2016.43,
+        "on_demand_usd": 3664.8,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 24533.26,
+        "on_demand_usd": 44588.4,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "B200",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 73599.77,
+        "on_demand_usd": 133765.2,
+        "interrupt_rate": 0.03
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 234.0,
+        "on_demand_usd": 234.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 2847.0,
+        "on_demand_usd": 2847.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 4,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "on_demand",
+        "cost_usd": 8541.0,
+        "on_demand_usd": 8541.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 151.92,
+        "on_demand_usd": 234.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 1848.36,
+        "on_demand_usd": 2847.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 4,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 5545.08,
+        "on_demand_usd": 8541.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 936.0,
+        "on_demand_usd": 936.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "on_demand",
+        "cost_usd": 11388.0,
+        "on_demand_usd": 11388.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 16,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 31536.0,
+        "on_demand_usd": 34164.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 607.68,
+        "on_demand_usd": 936.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 7393.44,
+        "on_demand_usd": 11388.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 16,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "spot",
+        "cost_usd": 22180.32,
+        "on_demand_usd": 34164.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 30,
+        "tier": "on_demand",
+        "cost_usd": 1404.0,
+        "on_demand_usd": 1404.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 365,
+        "tier": "reserved_1yr",
+        "cost_usd": 14016.0,
+        "on_demand_usd": 17082.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 24,
+        "interruptible": 0,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 31536.0,
+        "on_demand_usd": 51246.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 30,
+        "tier": "spot",
+        "cost_usd": 911.52,
+        "on_demand_usd": 1404.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 365,
+        "tier": "spot",
+        "cost_usd": 11090.16,
+        "on_demand_usd": 17082.0,
+        "interrupt_rate": 0.05
+      },
+      {
+        "gpu_type": "MI300X",
+        "hours_per_day": 24,
+        "interruptible": 1,
+        "horizon_days": 1095,
+        "tier": "reserved_3yr",
+        "cost_usd": 31536.0,
+        "on_demand_usd": 51246.0,
+        "interrupt_rate": 0.05
+      }
+    ],
+    "recurring_inference_days": 1095,
+    "interruption_rates": {
+      "H100": 0.02,
+      "H200": 0.02,
+      "A100": 0.06,
+      "A10G": 0.12,
+      "L4": 0.08,
+      "B200": 0.03,
+      "MI300X": 0.05
+    },
+    "horizon_sensitivity": [
+      {
+        "recurring_inference_days": 30,
+        "window_cost_usd": 13992.032,
+        "online_inference_tiers": [
+          {
+            "job_id": "job-infer-chat",
+            "tier": "on_demand"
+          },
+          {
+            "job_id": "job-infer-rag",
+            "tier": "on_demand"
+          },
+          {
+            "job_id": "job-infer-search",
+            "tier": "on_demand"
+          }
+        ]
+      },
+      {
+        "recurring_inference_days": 365,
+        "window_cost_usd": 12285.632,
+        "online_inference_tiers": [
+          {
+            "job_id": "job-infer-chat",
+            "tier": "reserved_1yr"
+          },
+          {
+            "job_id": "job-infer-rag",
+            "tier": "reserved_1yr"
+          },
+          {
+            "job_id": "job-infer-search",
+            "tier": "on_demand"
+          }
+        ]
+      },
+      {
+        "recurring_inference_days": 1095,
+        "window_cost_usd": 10125.632,
+        "online_inference_tiers": [
+          {
+            "job_id": "job-infer-chat",
+            "tier": "reserved_3yr"
+          },
+          {
+            "job_id": "job-infer-rag",
+            "tier": "reserved_3yr"
+          },
+          {
+            "job_id": "job-infer-search",
+            "tier": "reserved_3yr"
+          }
+        ]
+      }
+    ]
+  },
+  "allocation": {
+    "by_team": {
+      "rag": 1.93,
+      "search": 2.55,
+      "eval": 1.82,
+      "assistant": 3.03
+    },
+    "by_project": {
+      "doc-qa": 1.76,
+      "web-search": 2.32,
+      "nightly-eval": 1.64,
+      "chat": 2.84,
+      "(untagged)": 0.77
+    },
+    "tag_coverage": 0.918,
+    "chargeback_ready": true,
+    "by_team_exact": {
+      "rag": 1.9330720400000019,
+      "search": 2.54648833327381,
+      "eval": 1.816489570833334,
+      "assistant": 3.0329611171428614
+    },
+    "tag_coverage_exact": 0.9179166666666667,
+    "largest_team": "assistant",
+    "total_daily_usd": 9.329011061250007,
+    "largest_team_daily_usd": 3.0329611171428614,
+    "largest_team_share_pct": 32.51106786378352,
+    "requests": 2400,
+    "untagged_requests": 197,
+    "focus_export_rows": 50
+  },
+  "baseline_monthly_exact": 18005.624830000004,
+  "optimized_monthly_exact": 9661.624830000004,
+  "levers": {
+    "Inference (cascade/cache/batch)": 1186,
+    "Purchasing (spot/reserved)": 6414,
+    "Right-size MBU candidates": 144,
+    "Kill idle GPUs": 600
+  },
+  "total_savings_pct": 46.341074407468916,
+  "sustainability": {
+    "wh_per_query": 13.198043875000002,
+    "carbon_g": 5.0152566725000005,
+    "best_region": "europe-north1",
+    "cheapest_region": "us-east-wa"
+  }
+}

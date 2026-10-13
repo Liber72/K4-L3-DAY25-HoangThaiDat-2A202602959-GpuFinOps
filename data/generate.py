@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import os
 import random
+from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SEED = 25
@@ -114,10 +115,18 @@ def gen_token_usage(rng, n=2400):
             route_tier, inp, out, cached, int(is_batch), int(is_reasoning),
             rng.randint(80, 4000),
         ])
+    # Extra deterministic cache metadata without consuming RNG or changing tokens.
+    # Prompt contents are unavailable: prefix IDs are an explicit synthetic proxy,
+    # grouped by team/model and a 12-request arrival window, not verified text matches.
+    prefix_ids = [f"{row[2]}:{row[4]}:window-{index // 12}" for index, row in enumerate(rows)]
+    reads = Counter(prefix_ids)
+    for row, prefix_id in zip(rows, prefix_ids):
+        row.extend([prefix_id, reads[prefix_id]])
     with open(os.path.join(HERE, "token_usage.csv"), "w", newline="") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(["ts","model","team","project","route_tier","input_tokens","output_tokens",
-                    "cached_input_tokens","is_batch","is_reasoning","latency_ms"])
+                    "cached_input_tokens","is_batch","is_reasoning","latency_ms",
+                    "cached_prefix_id","avg_cache_reads"])
         w.writerows(rows)
 
 
